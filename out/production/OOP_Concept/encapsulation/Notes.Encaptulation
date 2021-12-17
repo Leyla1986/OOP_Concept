@@ -1,0 +1,18 @@
+
+What Is Encapsulation?
+
+Encapsulation is one of the four fundamental OOP concepts.
+First, encapsulation is a technique that packages related data and behaviors into a single unit.
+Second, encapsulation is a technique for protecting data from misuse by the outside world,
+which is referred as ‘information hiding’ or ‘data hiding’.
+Declare the variables of a class as private.
+
+Provide public setter and getter methods to modify and view the variables values.
+
+
+Why Is Encapsulation?
+             1. Flexibility: It’s more flexible and easy to change the encapsulated code with new requirements.
+             2. Reusability: Encapsulated code can be reused throughout the application or across multiple applications.
+
+How Is Encapsulation Done in Java?
+             Using interfaces, classes, access modifiers, setters and getters.

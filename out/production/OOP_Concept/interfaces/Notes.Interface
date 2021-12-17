@@ -1,0 +1,37 @@
+
+Notes on Interfaces:
+
+Interface is not a class, but acts similar.
+Interface:
+       An interface is a completely "abstract class" that is used to group related methods with empty bodies:
+interface Animal {
+  public void animalSound(); // interface method (does not have a body)
+  public void run();        // interface method (does not have a body)
+}
+
+Interfaces can not have Constructor,Blocks,Instance variables or methods.
+Interfaces can only have public static final variable.
+Interfaces can extend multiple other interfaces.Interface support multi-inheritance.
+Interface can have abstract methods.
+
+Why And When To Use Interfaces?
+1) To achieve security - hide certain details and only show the important details of an object (interface).
+
+2) Java does not support "multiple inheritance" (a class can only inherit from one superclass).
+   However, it can be achieved with interfaces, because the class can implement multiple interfaces.
+
+Note:
+   To implement multiple interfaces, separate them with a comma.
+EXAMPLE:
+   interface FirstClass {
+     public void myMethod(); // interface method
+   }
+
+   interface SecondClass {
+     public void myOtherMethod(); // interface method
+   }
+
+   class DemoClass implements FirstClass, SecondClass {
+     public void myMethod() {
+       System.out.println("Some text..");
+     }

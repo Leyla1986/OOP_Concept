@@ -1,0 +1,29 @@
+
+Important features of Object-Oriented Programming.Polymorphism perform a single action in different ways.
+In other words, polymorphism allows you to define one interface and have multiple implementations.
+
+                Has a 2 types:Compile time and Run Time Polymorphism.
+                              Overloading vs Overriding
+
+Why is Polymorphism?
+-reusability, flexibility and extensibility of code.
+
+How is Polymorphism Implemented in Java?
+You can implement polymorphism if you have a super class (or a super interface) with two or more sub classes.
+EXAMPLE:
+   public interface Animal {
+       public void move();
+   }
+
+   public class Bird implements Animal {
+       public void move() {
+           System.out.print("Flying...");
+       }
+   }
+
+   public class Fish implements Animal {
+       public void move() {
+           System.out.print("Swimming...");
+       }
+   }
+

@@ -1,0 +1,25 @@
+
+What is Abstraction?
+        Abstraction means - unwanted data hiding.Showing only functionality to the user.Focus on what functionality does.Not how to does.
+
+For Abstraction we are using abstract class and interface.
+
+Why we use abstract class?
+                     We don’t want someone create objects from the abstract class.
+
+Abstract Class:
+         Abstract class can have abstract and non- abstract method.
+         Abstract class can not be private and final.
+         For declaration abstract class using abstract keyword.
+         If a abstract class extend another abstract class,it does not have implement.
+         Abstract class can have constructor.
+         Abstract class follow instance or static variables.
+         Abstract class can be child class
+         We cannot create object from abstract class.
+
+Abstract Method:
+         You must implement abstract methods in first non-abstract class
+         Abstract method needs implementation way over right abstract method first non-abstract class
+         Abstract Method without body, abstract Method only in abstract class
+         Abstract Method it does not have a body.The body is provided by the subclass.
+         Abstract Method can not be static
