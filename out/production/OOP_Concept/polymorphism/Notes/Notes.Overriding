@@ -1,0 +1,84 @@
+
+What is Overriding in Java?
+
+Overriding means- Between inherited classes.Same method name and same parameter..
+                  Run time polymorphism.We can not overriding static, final and private method in Java.
+                  The overriding method must have same return type.
+
+
+What methods can be overridden?
+Rule #1:Only inherited methods can be overridden.
+    Access modifiers: public, protected and default (in the same package) can be overridden.
+                      private methods cannot be overridden.
+
+
+What methods that cannot be overridden?
+Rule #2:Final and static methods cannot be overridden.
+        public class Animal {
+
+            final void sleep() {
+
+            }
+            public class Dog extends Animal {
+
+                public void sleep() {
+
+                }
+            }
+Note:
+error: sleep() in Dog cannot override sleep() in Animal
+    public void sleep() {
+                ^
+  overridden method is final
+1 error
+
+Rule #3:Constructors cannot be overridden.
+
+Rule #4:Abstract methods must be overridden by the first concrete (non-abstract) subclass.
+        public interface Animal {
+            void move();
+        }
+
+        public abstract class AbstractDog implements Animal {
+            protected abstract void bark();
+
+        }
+
+        public class BullDog extends AbstractDog {
+            public void move() {
+
+            }
+            protected void bark() {
+
+
+            }
+
+        }
+Overriding and static method
+Rule #5: A static method in a subclass may hide another static one in a superclass, and that’s called hiding.
+         public class Animal {
+
+             static void sleep() {
+                 System.out.println("Animal sleeps");
+             }
+
+         }
+         public class Dog extends Animal {
+
+             static void sleep() {
+                 System.out.println("Dog sleeps");
+             }
+         }
+         public class Dog extends Animal {
+
+             static void sleep() {
+                 System.out.println("Dog sleeps");
+             }
+
+             void doSomething() {
+                 sleep();    // this calls the hiding method
+                 // because the Animal's sleep() is hidden, it requires to use
+                 // a fully qualified class name to access it.
+                 Animal.sleep();
+             }
+         }
